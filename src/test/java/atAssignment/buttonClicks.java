@@ -77,7 +77,7 @@ public class buttonClicks extends chromeDriverInitial{
 	    
   	}
   @Test(priority=1)
-  public void verifyAccordionTitleIsDisplayed()
+  public void verifyButtonClickTitleIsDisplayed()
   {
   	Assert.assertTrue(driver.findElement
   			 (By.id("nav-title")).isDisplayed());
