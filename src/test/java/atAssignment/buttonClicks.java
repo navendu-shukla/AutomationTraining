@@ -50,24 +50,27 @@ public class buttonClicks extends chromeDriverInitial{
 		    ("//div[@id='myModalJSClick']/div/div/div[3]/button"));
 		    WebDriverWait wait= new WebDriverWait
 		    		(driver,Duration.ofSeconds(30));
-		    wait.until(ExpectedConditions.invisibilityOf(element1));
 				    
 		    element1.click();
+		    //Thread.sleep(5000);
+		    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath
+				    ("//div[@id='myModalJSClick']/div/div/div[3]/button")));
 		   // js.executeScript("arguments[0].click();", element1);
 
 	//clicking button3 using id and action,move click method
 		    Actions act = new Actions(driver);
 		    WebElement elementToClick=driver.findElement(By.xpath("//span[@id='button3']"));
-		   
+		    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='button3']")));
 		    
 		    act.click(elementToClick).perform();
-		    Thread.sleep(2000);
+		    
 
 		    WebElement element1ToClick=driver.findElement(By.xpath
 		    ("//div[@id='myModalMoveClick']/div/div/div[3]/button"));
-
-		    act.click(element1ToClick).perform();
-//		   
+		    wait.until(ExpectedConditions.elementToBeClickable(By.xpath
+				    ("//div[@id='myModalMoveClick']/div/div/div[3]/button")));
+		   act.click(element1ToClick).perform();
+	   
 		   
 
 	    
