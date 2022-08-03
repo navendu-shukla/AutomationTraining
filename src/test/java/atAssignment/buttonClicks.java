@@ -2,12 +2,16 @@ package atAssignment;
 
 import org.testng.annotations.Test;
 import org.testng.Assert;
+
+import java.time.Duration;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 
 public class buttonClicks extends chromeDriverInitial{
@@ -31,7 +35,7 @@ public class buttonClicks extends chromeDriverInitial{
   @Test(priority = 2)
   public void buttonClickAutomation() throws InterruptedException {
 	   
-	//clicking button1 using xpath and webElement click() method
+//clicking button1 using xpath and webElement click() method
 		    driver.findElement(By.xpath("//span[@id='button1']")).click();
 		    driver.findElement(By.xpath
 		    ("//div[@id='myModalClick']/div/div/div[3]/button")).click();
@@ -44,6 +48,10 @@ public class buttonClicks extends chromeDriverInitial{
 		    
 		    WebElement element1=driver.findElement(By.xpath
 		    ("//div[@id='myModalJSClick']/div/div/div[3]/button"));
+		    WebDriverWait wait= new WebDriverWait
+		    		(driver,Duration.ofSeconds(30));
+		    wait.until(ExpectedConditions.invisibilityOf(element1));
+				    
 		    element1.click();
 		   // js.executeScript("arguments[0].click();", element1);
 
@@ -53,11 +61,12 @@ public class buttonClicks extends chromeDriverInitial{
 		   
 		    
 		    act.click(elementToClick).perform();
+		    Thread.sleep(2000);
 
-//		    WebElement element1ToClick=driver.findElement(By.xpath
-//		    ("//div[@id='myModalMoveClick']/div/div/div[3]/button"));
-//
-//		    act.moveToElement(element1ToClick).click().perform();
+		    WebElement element1ToClick=driver.findElement(By.xpath
+		    ("//div[@id='myModalMoveClick']/div/div/div[3]/button"));
+
+		    act.click(element1ToClick).perform();
 //		   
 		   
 

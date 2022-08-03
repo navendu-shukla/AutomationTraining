@@ -1,33 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-03T12:06:28 IST" name="Default suite" finished-at="2022-08-03T12:06:32 IST" duration-ms="4083">
+  <suite started-at="2022-08-03T14:20:54 IST" name="Default suite" finished-at="2022-08-03T14:21:00 IST" duration-ms="6176">
     <groups>
     </groups>
-    <test started-at="2022-08-03T12:06:28 IST" name="Default test" finished-at="2022-08-03T12:06:32 IST" duration-ms="4083">
+    <test started-at="2022-08-03T14:20:54 IST" name="Default test" finished-at="2022-08-03T14:21:00 IST" duration-ms="6176">
       <class name="atAssignment.buttonClicks">
-        <test-method is-config="true" signature="driverInitial()[pri:0, instance:atAssignment.buttonClicks@3b0fe47a]" started-at="2022-08-03T12:06:25 IST" name="driverInitial" finished-at="2022-08-03T12:06:28 IST" duration-ms="2574" status="PASS">
+        <test-method is-config="true" signature="driverInitial()[pri:0, instance:atAssignment.buttonClicks@663c9e7a]" started-at="2022-08-03T14:20:51 IST" name="driverInitial" finished-at="2022-08-03T14:20:54 IST" duration-ms="2495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitial -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.buttonClicks@3b0fe47a]" started-at="2022-08-03T12:06:28 IST" name="setup" finished-at="2022-08-03T12:06:29 IST" duration-ms="1659" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.buttonClicks@663c9e7a]" started-at="2022-08-03T14:20:54 IST" name="setup" finished-at="2022-08-03T14:20:56 IST" duration-ms="1956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAccordionTitleIsDisplayed()[pri:1, instance:atAssignment.buttonClicks@3b0fe47a]" started-at="2022-08-03T12:06:29 IST" name="verifyAccordionTitleIsDisplayed" finished-at="2022-08-03T12:06:30 IST" duration-ms="1196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAccordionTitleIsDisplayed -->
-        <test-method signature="verifyButtonsAreDisplayed()[pri:1, instance:atAssignment.buttonClicks@3b0fe47a]" started-at="2022-08-03T12:06:30 IST" name="verifyButtonsAreDisplayed" finished-at="2022-08-03T12:06:31 IST" duration-ms="199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyButtonsAreDisplayed -->
-        <test-method signature="buttonClickAutomation()[pri:2, instance:atAssignment.buttonClicks@3b0fe47a]" started-at="2022-08-03T12:06:31 IST" name="buttonClickAutomation" finished-at="2022-08-03T12:06:32 IST" duration-ms="958" status="PASS">
+        <test-method signature="buttonClickAutomation()[pri:2, instance:atAssignment.buttonClicks@663c9e7a]" started-at="2022-08-03T14:20:56 IST" name="buttonClickAutomation" finished-at="2022-08-03T14:21:00 IST" duration-ms="4137" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [225c82bbf7cc00ea7331c8fca23a7288, actions {actions=[org.openqa.selenium.interactions.Sequence@a33b4e3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:54249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54249/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 225c82bbf7cc00ea7331c8fca23a7288]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [225c82bbf7cc00ea7331c8fca23a7288, actions {actions=[org.openqa.selenium.interactions.Sequence@a33b4e3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:54249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54249/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 225c82bbf7cc00ea7331c8fca23a7288
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+at atAssignment.buttonClicks.buttonClickAutomation(buttonClicks.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buttonClickAutomation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.buttonClicks@3b0fe47a]" started-at="2022-08-03T12:06:32 IST" name="tearDown" finished-at="2022-08-03T12:06:32 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.buttonClicks@663c9e7a]" started-at="2022-08-03T14:21:00 IST" name="tearDown" finished-at="2022-08-03T14:21:00 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
