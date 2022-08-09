@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import testing.FileUploadPom;
+
 public class FileUpload extends MainDriver {
 
 	@SuppressWarnings("deprecation")
@@ -41,16 +43,10 @@ public class FileUpload extends MainDriver {
 		Assert.assertTrue(driver.findElement(By.cssSelector("#main-header")).isDisplayed());
 	}
 	
-	
-	@Test(priority = 2)
-    public void testAutoComplete(){
-		driver.findElement(By.id("myFile")).sendKeys("/Users/riasengar/Documents");
-		
-		driver.findElement(By.id("submit-button")).click();
-		
-		driver.switchTo().alert().accept();
-	
-	
+	@Test (priority=2)
+	public void runtests1() throws InterruptedException {
+	FileUploadPom info = new FileUploadPom(driver);
+	info.testFileUpload();
 	}
 	
 	@AfterClass

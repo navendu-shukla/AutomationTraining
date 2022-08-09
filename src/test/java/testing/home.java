@@ -2,8 +2,10 @@ package testing;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+//import org.testng.Assert;
+import org.testng.annotations.Test;
 
-
+@Test
 public class home {
 	
 	WebDriver driver = null; 
@@ -19,15 +21,16 @@ public class home {
 		public home(WebDriver driver) {
 			this.driver = driver;
 		}
-		
+		@Test
 		public void clickButton() throws InterruptedException {
 			driver.findElement(scroll).click();
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			driver.findElement(leftscroll).click();
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			driver.findElement(findMore).click();
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			driver.findElement(Close).click();
 		}
+		
 	}
 

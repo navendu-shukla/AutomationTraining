@@ -23,13 +23,13 @@ public class ourProducts {
 	
 	public void clickButton() throws InterruptedException {
 		driver.findElement(openPage).sendKeys(Keys.ENTER);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		driver.findElement(specialOffers).click();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		driver.findElement(Close).click();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		driver.findElement(camera).click();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		driver.findElement(Proceed).click();
 	}
 }

@@ -1,19 +1,21 @@
 package assignment;
 
+import java.util.ArrayList;
 //import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-//import org.openqa.selenium.support.ui.ExpectedConditions;
-//import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 //import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+
+
+import testing.TodoListPom;
 
 public class toDoList extends MainDriver{
 
@@ -41,23 +43,18 @@ public class toDoList extends MainDriver{
 		}
 	}
 	
+	@Test (priority=2)
+	public void runtests1() throws InterruptedException {
+	TodoListPom info = new TodoListPom(driver);
 	
-	@Test(priority = 2)
-    public void testWebUniversity() throws InterruptedException {
-		//add in to-do list			
-		driver.findElement(By.xpath("//i[starts-with(@id,'plus-icon')]")).click();
-		
-		driver.findElement(By.xpath("//input[starts-with(@placeholder,'Add new todo')]")).sendKeys("Gym",Keys.ENTER);
-		
-        //strike a task
-		driver.findElement(By.xpath("//ul/li[1]")).click();
-		
-		//delete in to-do list
-		
-		driver.findElement(By.xpath("//ul/li[4]/span/i")).click();
-		
+	
+	ArrayList<String> details = new ArrayList<String>();
+	details.add("Gym");
+	
+	info.keys(details);
+	info.clickButton();
+	info.clickButton2();
 	}
-	
 	@Test (priority = 1)
 	public void verifyToDoHeaderIsDisplayed() {
 		Assert.assertTrue(driver.findElement(By.cssSelector("#container")).isDisplayed());

@@ -1,14 +1,18 @@
 package assignment;
 
 
+
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import testing.AutoCompletePom;
+
 
 public class AutoComplete extends MainDriver{
 	
@@ -41,21 +45,11 @@ public class AutoComplete extends MainDriver{
 	public void verifyHeaderIsDisplayed() {
 		Assert.assertTrue(driver.findElement(By.cssSelector(".section_header")).isDisplayed());
 	}
-	
-	
-	@Test(priority = 2)
-    public void testAutoComplete(){
-		driver.findElement(By.id("myInput")).sendKeys("A");
-		driver.findElement(By.id("myInput")).sendKeys(Keys.ARROW_DOWN , Keys.ARROW_DOWN);
-		driver.findElement(By.id("myInput")).sendKeys(Keys.ENTER);
-		driver.findElement(By.id("submit-button")).click();
-		
-		driver.findElement(By.id("myInput")).sendKeys("Ba");
-		driver.findElement(By.id("myInput")).sendKeys(Keys.ARROW_DOWN , Keys.ARROW_DOWN , Keys.ARROW_DOWN);
-		driver.findElement(By.id("myInput")).sendKeys(Keys.ENTER);
-		driver.findElement(By.id("submit-button")).click();
-	
-	
+
+	@Test (priority=2)
+	public void runtests1() throws InterruptedException {
+	AutoCompletePom info = new AutoCompletePom(driver);
+	info.testAutoComplete();
 	}
 	
 	@AfterClass

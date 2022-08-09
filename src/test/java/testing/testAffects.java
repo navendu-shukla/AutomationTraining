@@ -1,9 +1,18 @@
 package testing;
 
+import java.time.Duration;
+
+//import java.time.Duration;
+
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+@Test
 public class testAffects {
 	WebDriver driver =  null;
 	
@@ -13,25 +22,26 @@ public class testAffects {
 	//find more button
 	By automationTesting = By.xpath("//button[@id='automation-accordion']");
 	//close the alert box
-	By secondswait = By.xpath("//button[@id='click-accordion']");
+	//By secondswait = By.xpath("//button[@id='click-accordion']");
 	
 	public testAffects(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-
+    @Test
 	public void clickButton() throws InterruptedException {
 	
 		driver.findElement(manual).click();
-		Thread.sleep(2000);
+		
 		driver.findElement(bdd).click();
-		Thread.sleep(2000);
+		
 		driver.findElement(automationTesting).click();
-		Thread.sleep(2000);
 		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='click-accordion']"))).click();
 		
-		driver.findElement(secondswait).click();
-		Thread.sleep(5000);
+		//driver.findElement(secondswait).click();
+		
 	}
 
 }

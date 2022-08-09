@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-03T12:08:16 IST" name="Default suite" finished-at="2022-08-03T12:08:22 IST" duration-ms="6411">
+  <suite started-at="2022-08-09T13:50:54 IST" name="Default suite" finished-at="2022-08-09T13:51:02 IST" duration-ms="7697">
     <groups>
     </groups>
-    <test started-at="2022-08-03T12:08:16 IST" name="Default test" finished-at="2022-08-03T12:08:22 IST" duration-ms="6411">
-      <class name="assignment.click">
-        <test-method is-config="true" signature="setup()[pri:0, instance:assignment.click@942a29c]" started-at="2022-08-03T12:08:16 IST" name="setup" finished-at="2022-08-03T12:08:21 IST" duration-ms="4554" status="PASS">
+    <test started-at="2022-08-09T13:50:54 IST" name="Default test" finished-at="2022-08-09T13:51:02 IST" duration-ms="7697">
+      <class name="assignment.Datepicker">
+        <test-method is-config="true" signature="setup()[pri:0, instance:assignment.Datepicker@7db12bb6]" started-at="2022-08-09T13:50:54 IST" name="setup" finished-at="2022-08-09T13:50:59 IST" duration-ms="4454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ActionMoveClick()[pri:4, instance:assignment.click@942a29c]" started-at="2022-08-03T12:08:21 IST" name="ActionMoveClick" finished-at="2022-08-03T12:08:22 IST" duration-ms="1685" status="PASS">
+        <test-method signature="verifyHeaderIsDisplayed()[pri:1, instance:assignment.Datepicker@7db12bb6]" started-at="2022-08-09T13:50:59 IST" name="verifyHeaderIsDisplayed" finished-at="2022-08-09T13:51:01 IST" duration-ms="2324" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ActionMoveClick -->
-        <test-method is-config="true" signature="tierDown()[pri:0, instance:assignment.click@942a29c]" started-at="2022-08-03T12:08:22 IST" name="tierDown" finished-at="2022-08-03T12:08:22 IST" duration-ms="133" status="PASS">
+        </test-method> <!-- verifyHeaderIsDisplayed -->
+        <test-method signature="runtests1()[pri:2, instance:assignment.Datepicker@7db12bb6]" started-at="2022-08-09T13:51:01 IST" name="runtests1" finished-at="2022-08-09T13:51:02 IST" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runtests1 -->
+        <test-method is-config="true" signature="tierDown()[pri:0, instance:assignment.Datepicker@7db12bb6]" started-at="2022-08-09T13:51:02 IST" name="tierDown" finished-at="2022-08-09T13:51:02 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tierDown -->
-      </class> <!-- assignment.click -->
+      </class> <!-- assignment.Datepicker -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

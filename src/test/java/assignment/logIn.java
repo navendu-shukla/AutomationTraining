@@ -1,18 +1,21 @@
 package assignment;
 
-import java.time.Duration;
+//import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 //import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 //import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+
+import testing.logInPom;
 
 public class logIn extends MainDriver{
     		    
@@ -37,32 +40,33 @@ public class logIn extends MainDriver{
 						}
 					}
 				}
-				
-				
-				@Test(priority = 2)
-			    public void testWebUniversity() throws InterruptedException {
-					driver.findElement(By.xpath("//input[starts-with(@id,'text')]")).sendKeys("webdriver");
-					driver.findElement(By.xpath("//input[starts-with(@id,'password')]")).sendKeys("webdriver123");
-					//   driver.findElement(By.xpath("//button[@type='submit' and  @id='login-button']")).click();
-					WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type='submit' and  @id='login-button']"))).click();
-					driver.switchTo().alert().accept();
-				    
-				}
-				
-				@Test (priority = 1)
-				public void verifyLoginFormIsDisplayed() {
+
+				@Test (priority=1)
+				public void verifyThankyouPageIsDisplayed() {
 					Assert.assertTrue(driver.findElement(By.cssSelector(".form")).isDisplayed());
 				}
-				
-				
-				@AfterClass
-				public void tierDown() {
-					driver.quit();
-					
-				}
-				
-			}
 
+							
+							@Test (priority=2)
+							public void runtests1() throws InterruptedException {
+							logInPom info = new logInPom(driver);
+							
+							ArrayList<String> details = new ArrayList<String>();
+							details.add("webdriver");
+							details.add("webdriver123");
+							
+							info.keys(details);
+							info.clickButton();
+							
+							}
+							
+							@AfterClass
+							public void tierDown() {
+							 driver.quit();
+							}
+							
+							
+			}
+			
 
 

@@ -2,61 +2,82 @@ package assignment;
 
 import java.util.ArrayList;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-//import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import testing.ContactUsIframe;
-import testing.OurProductsIframe;
-import testing.homeIframe;
+
+import testing.contactUs_pom;
+import testing.home;
+
+import testing.ourProducts;
 
 
 public class iFrameChallenge extends MainDriver {
 	
-    @Test
-	public void testWebUniversity() throws InterruptedException {
-	    MainDriver.CreateInstance();
-	    
-	    homeIframe search = new homeIframe(driver);
-	    OurProductsIframe offers = new OurProductsIframe(driver); 
-	    ContactUsIframe info = new ContactUsIframe(driver);
-	    
-	    driver.manage().window().maximize();
-		driver.get("http://www.webdriveruniversity.com/");
-		String parentHandle = driver.getWindowHandle();
-		System.out.println("parent window - " +parentHandle);
-		driver.findElement(By.id("iframe")).sendKeys( Keys.ENTER);
+	@SuppressWarnings("deprecation")
+	@BeforeClass
+	public void setup() throws InterruptedException {
+		MainDriver.CreateInstance();
+		
+	     driver.manage().window().maximize();
+	     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		 driver.get("http://www.webdriveruniversity.com/");
+			String expectedTitle = "WebDriverUniversity.com";
+			String actualTitle = driver.getTitle();
+			Assert.assertEquals(actualTitle,expectedTitle);
+			String parentHandle = driver.getWindowHandle();
+			System.out.println("parent window - " +parentHandle);
+		driver.findElement(By.id("iframe")).click();
+       
 		Set<String> handles = driver.getWindowHandles();
 		for (String handle : handles) {
 			System.out.println(handle);
 			if(!handle.equals(parentHandle)) {
 				driver.switchTo().window(handle);
-				
 				driver.switchTo().frame(driver.findElement(By.id("frame")));
-				
-				search.clickButton();
-				
-				offers.clickButton();
-				
-				info.openContactUsPage();
-				
-				ArrayList<String> details = new ArrayList<String>();
-				details.add("Ria");
-				details.add("Sengar");
-				details.add("sengarria4321@gmail.com");
-				details.add("Automation Testing");
-				info.keys(details);
-				info.clickButton();
-				
-				Thread.sleep(2000);
-				driver.close();
-				driver.switchTo().window(parentHandle);
-				driver.close();
-
-
-}
+			}
 		}
 	}
+
+
+	@Test (priority=1)
+	public void verifyCopyrightIsDisplayed() {
+		Assert.assertTrue(driver.findElement(By.cssSelector(".col-lg-12")).isDisplayed());
 	}
+
+				@Test (priority=2)
+				public void runtests1() throws InterruptedException {
+					 home search = new home(driver);
+					 ourProducts offers = new ourProducts(driver); 
+					 contactUs_pom info = new contactUs_pom(driver);
+				
+				
+					 search.clickButton();
+					 offers.clickButton();
+					 info.openContactUsPage();
+						
+						
+						ArrayList<String> details = new ArrayList<String>();
+						details.add("Ria");
+						details.add("Sengar");
+						details.add("sengarria4321@gmail.com");
+						details.add("Automation Testing");
+						info.keys(details);
+						info.clickButton();
+				
+				}
+				
+				@AfterClass
+				public void tierDown() {
+				 driver.quit();
+				}
+				
+				
+}
+

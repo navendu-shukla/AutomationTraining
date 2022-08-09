@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class contactUs_pom {
 WebDriver driver = null; 
@@ -27,18 +29,23 @@ WebDriver driver = null;
 	public void keys(ArrayList<String> text) throws InterruptedException {
 		
 		driver.findElement(firstName).sendKeys(text.get(0));
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		driver.findElement(lastName).sendKeys(text.get(1));
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		driver.findElement(email).sendKeys(text.get(2));
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		driver.findElement(comments).sendKeys(text.get(3));
 	}
 	public void openContactUsPage() throws InterruptedException {
 		driver.findElement(openPage).sendKeys(Keys.ENTER);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 	}
 	public void clickButton() throws InterruptedException {
 		driver.findElement(submit).click();
 	}
+	@Test 
+	public void verifyThankyouPageIsDisplayed() {
+		Assert.assertTrue(driver.findElement(By.cssSelector("#contact_reply")).isDisplayed());
+	}
+	
 }

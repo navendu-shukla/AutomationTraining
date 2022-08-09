@@ -1,57 +1,57 @@
 package assignment;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import testing.DatepickerPom;
+
+
+
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-//import org.testng.annotations.Test;
 
 public class Datepicker extends MainDriver{
 	
-    @Test
-	public void testWebUniversity() throws InterruptedException {
-	    MainDriver.CreateInstance();
-	    
+    @SuppressWarnings("deprecation")
+	@BeforeClass
+	public void setup() {
+		MainDriver.CreateInstance();
+
 	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://www.webdriveruniversity.com/");
+		String expectedTitle = "WebDriverUniversity.com";
+		String actualTitle = driver.getTitle();
+		Assert.assertEquals(actualTitle,expectedTitle);
 		String parentHandle = driver.getWindowHandle();
 		System.out.println("parent window - " +parentHandle);
-		driver.findElement(By.id("datepicker")).sendKeys( Keys.ENTER);
+		driver.findElement(By.id("datepicker")).click();
+
 		Set<String> handles = driver.getWindowHandles();
 		for (String handle : handles) {
 			System.out.println(handle);
 			if(!handle.equals(parentHandle)) {
 				driver.switchTo().window(handle);
-				
-				String month = "October 2022";
-				String date = "15";
-				
-				driver.findElement(By.id("datepicker")).click();
-			    Thread.sleep(2000);  
-			    
-			    while(true) {
-			    String text = driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/thead/tr[1]/th[2]")).getText();
-			    if(text.equals(month))
-			    {
-			    	break;
-			    }
-			    else {
-			    	driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/thead/tr[1]/th[3]")).click();
-			    	Thread.sleep(2000);
-			    }
-			    
-			    }
-			    Thread.sleep(2000);
-			    driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/tbody/tr/td[contains(text(),"+date+")]")).click();
-			    
-			    Thread.sleep(2000);
-	        	driver.close();
-				driver.switchTo().window(parentHandle);
-				driver.close();
-
-
-}
+			}
 		}
 	}
+
+	@Test (priority=1)
+	public void verifyHeaderIsDisplayed() {
+		Assert.assertTrue(driver.findElement(By.cssSelector("#main-header")).isDisplayed());
+	}
+
+				@Test (priority=2)
+				public void runtests1() throws InterruptedException {
+				DatepickerPom info = new DatepickerPom(driver);
+				info.clickButton();
+				}
+				@AfterClass
+				public void tierDown() {
+				 driver.quit();
+				}	
 }

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignment.AnnoyingAlerts">
+      <class name="assignment.Datepicker">
         <methods>
+          <include name="runtests1"/>
           <include name="setup"/>
-          <include name="JSConfirmBox"/>
+          <include name="verifyThankyouPageIsDisplayed"/>
           <include name="tierDown"/>
-          <include name="AjaxLoader"/>
         </methods>
-      </class> <!-- assignment.AnnoyingAlerts -->
+      </class> <!-- assignment.Datepicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
