@@ -5,11 +5,10 @@ import org.testng.Assert;
 import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+
 import org.testng.annotations.*;
 
-public class toDoList extends chromeDriverInitial{
+public class ToDoListTest extends chromeDriverInitial{
 	@BeforeTest
 	public void setup() {
 		driver.get("http://webdriveruniversity.com/index.html");
@@ -30,18 +29,15 @@ public class toDoList extends chromeDriverInitial{
 	}	
   @Test(priority=2)
   public void toDoListAutomation() throws InterruptedException {
+	  ToDoList td=new ToDoList(driver);
 	   
 	//adding element in todo list 	
-		    WebElement element=driver.findElement(By.cssSelector
-		    ("input[placeholder='Add new todo']"));
-		    
-		    element.sendKeys("make pizza");
-		    element.sendKeys(Keys.ENTER);
+		    td.addElement();
 		    
 		  
 	//deleting element in todo list	 
-		    driver.findElement(By.xpath("//ul/li[3]/span/i")).click();
-		    
+		    td.removeElement();
+		    Thread.sleep(2000);
 		    
 		    
 

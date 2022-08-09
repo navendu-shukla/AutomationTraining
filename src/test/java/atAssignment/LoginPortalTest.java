@@ -5,14 +5,13 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.Set;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 
-public class loginPortal extends chromeDriverInitial {
+public class LoginPortalTest extends chromeDriverInitial {
 	@BeforeTest
 	public void setup() {
 		driver.get("http://webdriveruniversity.com/index.html");
@@ -33,22 +32,17 @@ public class loginPortal extends chromeDriverInitial {
 	}	
   @Test(priority=2)
   public void loginPortalAutomation() throws InterruptedException{
+	  LoginPortal lp=new LoginPortal(driver);
 	    
 	//entering username and pass	    
-		    driver.findElement(By.cssSelector
-		    ("input[placeholder='Username']")).sendKeys("webdriver");
-		    
-		    driver.findElement(By.xpath
-		    ("//input[@placeholder='Password']")).sendKeys("webdriver123");
+		    lp.keys();
 	//clicking login button	    		    
-		    driver.findElement(By.cssSelector
-		    		("button[id='login-button']")).click();
+		    lp.clickLoginBtn();
 		    WebDriverWait wait= new WebDriverWait
 		    		(driver,Duration.ofSeconds(30));
 		    wait.until(ExpectedConditions.alertIsPresent());
 		   
-		    Alert al=driver.switchTo().alert();
-		    al.accept();
+		   lp.handleAlert();
 		   
 		   
 

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 
-public class accordionText extends chromeDriverInitial{
+public class AccordionTextTest extends chromeDriverInitial{
 	@BeforeTest
 	public void setup() {
 		driver.get("http://webdriveruniversity.com/index.html");
@@ -33,22 +33,19 @@ public class accordionText extends chromeDriverInitial{
   @Test(priority=2)
   public void pomAutomation() throws InterruptedException {
 	    
+	  		AccordionText acc=new AccordionText(driver);
 	//clicking on all buttons
-		    driver.findElement(By.cssSelector
-		    		("button[id=manual-testing-accordion]")).click();
-		    driver.findElement(By.cssSelector
-		    		("button[id=cucumber-accordion]")).click();
-		    driver.findElement(By.cssSelector
-		    		("button[id=automation-accordion]")).click();
+		   acc.clickBtn(acc.btn1);
+		   acc.clickBtn(acc.btn2);
+		   acc.clickBtn(acc.btn3);
 	//explicit wait on keep clicking button
 		    WebDriverWait wait= new WebDriverWait
 		    		(driver,Duration.ofSeconds(30));
 		    wait.until(ExpectedConditions.textToBePresentInElementLocated
-		    (By.xpath("//p[@id='hidden-text']"),"LOADING COMPLETE."));
-		    //Thread.sleep(11000);
-		    driver.findElement(By.cssSelector
-		    		("button[id=click-accordion]")).click();
+		    (acc.loadingStatus,"LOADING COMPLETE."));
 		    
+		    acc.clickBtn(acc.btn4);
+		    	    
 		 
 
 	    

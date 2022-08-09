@@ -7,8 +7,8 @@
         <methods>
           <include name="driverInitial"/>
           <include name="tearDown"/>
-          <include name="setup"/>
           <include name="verifyScrollHeaderIsDisplayed"/>
+          <include name="setup"/>
           <include name="scrollAutomation"/>
         </methods>
       </class> <!-- atAssignment.scrollingAround -->

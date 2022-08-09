@@ -7,14 +7,11 @@ import java.time.Duration;
 import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 
-public class buttonClicks extends chromeDriverInitial{
+public class ButtonClicksTest extends chromeDriverInitial{
 	@BeforeTest
 	public void setup() {
 		driver.get("http://webdriveruniversity.com/index.html");
@@ -34,43 +31,39 @@ public class buttonClicks extends chromeDriverInitial{
 	}
   @Test(priority = 2)
   public void buttonClickAutomation() throws InterruptedException {
+	  ButtonClick btc=new ButtonClick();
+	  WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(30));
 	   
 //clicking button1 using xpath and webElement click() method
-		    driver.findElement(By.xpath("//span[@id='button1']")).click();
-		    driver.findElement(By.xpath
-		    ("//div[@id='myModalClick']/div/div/div[3]/button")).click();
+		    btc.clickBtn1();
+		    btc.clickCloseBtn1();
 	
 	//clicking button2 using cssSelector and JS click method
-		    WebElement element = driver.findElement
-		    (By.cssSelector("span[id='button2']"));
-		    JavascriptExecutor js = (JavascriptExecutor)driver;
-		    js.executeScript("arguments[0].click();", element);
+		    btc.clickBtn2();
 		    
-		    WebElement element1=driver.findElement(By.xpath
-		    ("//div[@id='myModalJSClick']/div/div/div[3]/button"));
-		    WebDriverWait wait= new WebDriverWait
-		    		(driver,Duration.ofSeconds(30));
-				    
-		    element1.click();
+		    btc.clickCloseBtn2();
 		    //Thread.sleep(5000);
-		    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath
-				    ("//div[@id='myModalJSClick']/div/div/div[3]/button")));
+		    
 		   // js.executeScript("arguments[0].click();", element1);
 
 	//clicking button3 using id and action,move click method
-		    Actions act = new Actions(driver);
-		    WebElement elementToClick=driver.findElement(By.xpath("//span[@id='button3']"));
-		    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='button3']")));
+		   
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(btc.btn3));
 		    
-		    act.click(elementToClick).perform();
+		    btc.clickBtn3();
+		   wait.until(ExpectedConditions.visibilityOfElementLocated(btc.closeBtn3));
+		    btc.clickCloseBtn3();
 		    
-
-		    WebElement element1ToClick=driver.findElement(By.xpath
-		    ("//div[@id='myModalMoveClick']/div/div/div[3]/button"));
-		    wait.until(ExpectedConditions.elementToBeClickable(By.xpath
-				    ("//div[@id='myModalMoveClick']/div/div/div[3]/button")));
-		   act.click(element1ToClick).perform();
-	   
+		    
+Thread.sleep(2000);
+			//btc.clickCloseBtn3();
+			//Thread.sleep(2000);
+//		    WebElement element1ToClick=driver.findElement(By.xpath
+//		    ("//div[@id='myModalMoveClick']/div/div/div[3]/button"));
+//		    wait.until(ExpectedConditions.elementToBeClickable(By.xpath
+//				    ("//div[@id='myModalMoveClick']/div/div/div[3]/button")));
+//		   act.click(element1ToClick).perform();
+//	   
 		   
 
 	    

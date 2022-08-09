@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 15.191 s <<< FAILURE! - in TestSuite
-atAssignment.scrollingAround.setup  Time elapsed: 0.295 s  <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 9.796 s <<< FAILURE! - in TestSuite
+atAssignment.scrollingAround.setup  Time elapsed: 0.294 s  <<< FAILURE!
 org.openqa.selenium.NoSuchWindowException: 
 no such window: target window already closed
 from unknown error: web view not found
@@ -10,9 +10,9 @@ from unknown error: web view not found
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81b3154cba8e657a7a97af950ea079f0, get {url=http://webdriveruniversity.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81b3154cba8e657a7a97af950ea079f0
+Command: [9c570e34793942ee8a5ead02a17e88ab, get {url=http://webdriveruniversity.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:59348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59348/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c570e34793942ee8a5ead02a17e88ab
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

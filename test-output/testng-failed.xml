@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="atAssignment.buttonClicks">
+      <class name="atAssignment.HiddenElementsTest">
         <methods>
           <include name="tearDown"/>
           <include name="driverInitial"/>
+          <include name="hiddenElementsAutomation"/>
           <include name="setup"/>
-          <include name="buttonClickAutomation"/>
         </methods>
-      </class> <!-- atAssignment.buttonClicks -->
+      </class> <!-- atAssignment.HiddenElementsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

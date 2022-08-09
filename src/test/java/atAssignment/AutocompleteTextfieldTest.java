@@ -7,7 +7,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 
-public class autocompleteTextfield extends chromeDriverInitial{
+public class AutocompleteTextfieldTest extends chromeDriverInitial{
 	  @BeforeTest
 	  public void setup()
 		{
@@ -29,22 +29,13 @@ public class autocompleteTextfield extends chromeDriverInitial{
 		}
 @Test(priority=2)
 public void autocompleteAutomation() throws InterruptedException {
+	AutocompleteTextfield at=new AutocompleteTextfield(driver);
 	//clicking on input textfield and sending keys
-	driver.findElement(By.cssSelector("input[id='myInput']")).sendKeys("a");
-	//selecting input from list using index
-	driver.findElement(By.xpath
-			("//div[@id='myInputautocomplete-list']/div[2]")).click();
+	at.keys("c");
+//selecting input from list using index
+	at.selectItem();
 	//clicking submit button
-	driver.findElement(By.cssSelector("input[id='submit-button']")).click();
-	//clicking on input textfield and sending keys
-		driver.findElement(By.cssSelector
-				("input[id='myInput']")).sendKeys("c");
-		//selecting input from list using index
-		driver.findElement(By.xpath
-				("//div[@id='myInputautocomplete-list']/div[4]")).click();
-		//clicking submit button
-		driver.findElement(By.cssSelector
-				("input[id='submit-button']")).click();
+	at.clickSubmitBtn();
 	
 	
 	  

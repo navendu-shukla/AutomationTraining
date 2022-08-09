@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="6" passed="4" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-03T10:02:01 IST" name="Suite" finished-at="2022-08-03T10:02:12 IST" duration-ms="11464">
+  <suite started-at="2022-08-04T12:37:57 IST" name="Suite" finished-at="2022-08-04T12:38:03 IST" duration-ms="6067">
     <groups>
     </groups>
-    <test started-at="2022-08-03T10:02:01 IST" name="Test1" finished-at="2022-08-03T10:02:12 IST" duration-ms="11328">
+    <test started-at="2022-08-04T12:37:57 IST" name="Test1" finished-at="2022-08-04T12:38:03 IST" duration-ms="5944">
       <class name="atAssignment.contactUs">
-        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.contactUs@51e69659]" started-at="2022-08-03T10:02:01 IST" name="setup" finished-at="2022-08-03T10:02:03 IST" duration-ms="2261" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.contactUs@4310d43]" started-at="2022-08-04T12:37:57 IST" name="setup" finished-at="2022-08-04T12:37:59 IST" duration-ms="1868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyContactUsFormIsDisplayed()[pri:1, instance:atAssignment.contactUs@51e69659]" started-at="2022-08-03T10:02:03 IST" name="verifyContactUsFormIsDisplayed" finished-at="2022-08-03T10:02:04 IST" duration-ms="935" status="PASS">
+        <test-method signature="verifyContactUsFormIsDisplayed()[pri:1, instance:atAssignment.contactUs@4310d43]" started-at="2022-08-04T12:37:59 IST" name="verifyContactUsFormIsDisplayed" finished-at="2022-08-04T12:38:00 IST" duration-ms="995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactUsFormIsDisplayed -->
-        <test-method signature="verifyContactUsIsDisplayed()[pri:1, instance:atAssignment.contactUs@51e69659]" started-at="2022-08-03T10:02:04 IST" name="verifyContactUsIsDisplayed" finished-at="2022-08-03T10:02:04 IST" duration-ms="31" status="PASS">
+        <test-method signature="verifyContactUsIsDisplayed()[pri:1, instance:atAssignment.contactUs@4310d43]" started-at="2022-08-04T12:38:00 IST" name="verifyContactUsIsDisplayed" finished-at="2022-08-04T12:38:00 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactUsIsDisplayed -->
-        <test-method signature="contactUsAutomation()[pri:2, instance:atAssignment.contactUs@51e69659]" started-at="2022-08-03T10:02:04 IST" name="contactUsAutomation" finished-at="2022-08-03T10:02:12 IST" duration-ms="7796" status="PASS">
+        <test-method signature="contactUsAutomation()[pri:2, instance:atAssignment.contactUs@4310d43]" started-at="2022-08-04T12:38:00 IST" name="contactUsAutomation" finished-at="2022-08-04T12:38:03 IST" duration-ms="2790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUsAutomation -->
-        <test-method signature="verifyThankyouMsgIsDisplayed()[pri:3, instance:atAssignment.contactUs@51e69659]" started-at="2022-08-03T10:02:12 IST" name="verifyThankyouMsgIsDisplayed" finished-at="2022-08-03T10:02:12 IST" duration-ms="92" status="PASS">
+        <test-method signature="verifyThankyouMsgIsDisplayed()[pri:3, instance:atAssignment.contactUs@4310d43]" started-at="2022-08-04T12:38:03 IST" name="verifyThankyouMsgIsDisplayed" finished-at="2022-08-04T12:38:03 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThankyouMsgIsDisplayed -->
-        <test-method is-config="true" signature="tearDownClose()[pri:0, instance:atAssignment.contactUs@51e69659]" started-at="2022-08-03T10:02:12 IST" name="tearDownClose" finished-at="2022-08-03T10:02:12 IST" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="tearDownClose()[pri:0, instance:atAssignment.contactUs@4310d43]" started-at="2022-08-04T12:38:03 IST" name="tearDownClose" finished-at="2022-08-04T12:38:03 IST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClose -->
       </class> <!-- atAssignment.contactUs -->
     </test> <!-- Test1 -->
-    <test started-at="2022-08-03T10:02:12 IST" name="Test2" finished-at="2022-08-03T10:02:12 IST" duration-ms="54">
+    <test started-at="2022-08-04T12:38:03 IST" name="Test2" finished-at="2022-08-04T12:38:03 IST" duration-ms="49">
       <class name="atAssignment.contactUs">
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.contactUs@51e69659]" started-at="2022-08-03T10:02:12 IST" name="tearDown" finished-at="2022-08-03T10:02:12 IST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.contactUs@4310d43]" started-at="2022-08-04T12:38:03 IST" name="tearDown" finished-at="2022-08-04T12:38:03 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- atAssignment.contactUs -->
       <class name="atAssignment.scrollingAround">
-        <test-method is-config="true" signature="driverInitial()[pri:0, instance:atAssignment.scrollingAround@18df8434]" started-at="2022-08-03T10:01:58 IST" name="driverInitial" finished-at="2022-08-03T10:02:01 IST" duration-ms="2645" status="PASS">
+        <test-method is-config="true" signature="driverInitial()[pri:0, instance:atAssignment.scrollingAround@229c6181]" started-at="2022-08-04T12:37:54 IST" name="driverInitial" finished-at="2022-08-04T12:37:57 IST" duration-ms="2695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitial -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.scrollingAround@18df8434]" started-at="2022-08-03T10:02:12 IST" name="setup" finished-at="2022-08-03T10:02:12 IST" duration-ms="20" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.scrollingAround@229c6181]" started-at="2022-08-04T12:38:03 IST" name="setup" finished-at="2022-08-04T12:38:03 IST" duration-ms="19" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -54,9 +54,9 @@ from unknown error: web view not found
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81b3154cba8e657a7a97af950ea079f0, get {url=http://webdriveruniversity.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81b3154cba8e657a7a97af950ea079f0]]>
+Command: [9c570e34793942ee8a5ead02a17e88ab, get {url=http://webdriveruniversity.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:59348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59348/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c570e34793942ee8a5ead02a17e88ab]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -65,9 +65,9 @@ from unknown error: web view not found
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81b3154cba8e657a7a97af950ea079f0, get {url=http://webdriveruniversity.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81b3154cba8e657a7a97af950ea079f0
+Command: [9c570e34793942ee8a5ead02a17e88ab, get {url=http://webdriveruniversity.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:59348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59348/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c570e34793942ee8a5ead02a17e88ab
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,7 +115,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyScrollHeaderIsDisplayed()[pri:1, instance:atAssignment.scrollingAround@18df8434]" started-at="2022-08-03T10:02:12 IST" name="verifyScrollHeaderIsDisplayed" finished-at="2022-08-03T10:02:12 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyScrollHeaderIsDisplayed()[pri:1, instance:atAssignment.scrollingAround@229c6181]" started-at="2022-08-04T12:38:03 IST" name="verifyScrollHeaderIsDisplayed" finished-at="2022-08-04T12:38:03 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -124,9 +124,9 @@ from unknown error: web view not found
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81b3154cba8e657a7a97af950ea079f0, get {url=http://webdriveruniversity.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81b3154cba8e657a7a97af950ea079f0]]>
+Command: [9c570e34793942ee8a5ead02a17e88ab, get {url=http://webdriveruniversity.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:59348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59348/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c570e34793942ee8a5ead02a17e88ab]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -135,9 +135,9 @@ from unknown error: web view not found
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81b3154cba8e657a7a97af950ea079f0, get {url=http://webdriveruniversity.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81b3154cba8e657a7a97af950ea079f0
+Command: [9c570e34793942ee8a5ead02a17e88ab, get {url=http://webdriveruniversity.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:59348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59348/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c570e34793942ee8a5ead02a17e88ab
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -185,7 +185,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScrollHeaderIsDisplayed -->
-        <test-method signature="scrollAutomation()[pri:2, instance:atAssignment.scrollingAround@18df8434]" started-at="2022-08-03T10:02:12 IST" name="scrollAutomation" finished-at="2022-08-03T10:02:12 IST" duration-ms="0" status="SKIP">
+        <test-method signature="scrollAutomation()[pri:2, instance:atAssignment.scrollingAround@229c6181]" started-at="2022-08-04T12:38:03 IST" name="scrollAutomation" finished-at="2022-08-04T12:38:03 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -194,9 +194,9 @@ from unknown error: web view not found
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81b3154cba8e657a7a97af950ea079f0, get {url=http://webdriveruniversity.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81b3154cba8e657a7a97af950ea079f0]]>
+Command: [9c570e34793942ee8a5ead02a17e88ab, get {url=http://webdriveruniversity.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:59348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59348/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c570e34793942ee8a5ead02a17e88ab]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -205,9 +205,9 @@ from unknown error: web view not found
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81b3154cba8e657a7a97af950ea079f0, get {url=http://webdriveruniversity.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81b3154cba8e657a7a97af950ea079f0
+Command: [9c570e34793942ee8a5ead02a17e88ab, get {url=http://webdriveruniversity.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:59348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59348/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c570e34793942ee8a5ead02a17e88ab
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -255,7 +255,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollAutomation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.scrollingAround@18df8434]" started-at="2022-08-03T10:02:12 IST" name="tearDown" finished-at="2022-08-03T10:02:12 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.scrollingAround@229c6181]" started-at="2022-08-04T12:38:03 IST" name="tearDown" finished-at="2022-08-04T12:38:03 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

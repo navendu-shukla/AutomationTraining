@@ -4,12 +4,10 @@ import org.testng.annotations.Test;
 import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 
-public class hiddenElements extends chromeDriverInitial{
+public class HiddenElementsTest extends chromeDriverInitial{
 	  @BeforeTest
 	  public void setup()
 		{
@@ -31,27 +29,18 @@ public class hiddenElements extends chromeDriverInitial{
 		}
 @Test(priority=2)
 public void hiddenElementsAutomation() throws InterruptedException {
+	HiddenElements he=new HiddenElements();
 	//clicking not displayed element
-	WebElement element= driver.findElement
-			(By.cssSelector("span[id='button1']"));
-	JavascriptExecutor js = (JavascriptExecutor)driver;
-	js.executeScript("arguments[0].click();", element);
-	driver.findElement(By.xpath
-		    ("//div[@id='myModalClick']/div/div/div[3]/button")).click();
+	he.clickBtn(he.btn1);
+	he.clickCloseBtn(he.closeBtn1);
 	
 	//clicking visibility hidden element
-	WebElement element1= driver.findElement
-			(By.cssSelector("span[id='button2']"));
-	js.executeScript("arguments[0].click();", element1);
-	driver.findElement(By.xpath
-		    ("//div[@id='myModalJSClick']/div/div/div[3]/button")).click();
+	he.clickBtn(he.btn2);
+	he.clickCloseBtn(he.closeBtn2);
 	
 	//clicking zero opacity element
-	WebElement element2= driver.findElement
-			(By.cssSelector("span[id='button3']"));
-	js.executeScript("arguments[0].click();", element2);
-	driver.findElement(By.xpath
-		    ("//div[@id='myModalMoveClick']/div/div/div[3]/button")).click();
+	he.clickBtn(he.btn3);
+	he.clickCloseBtn(he.closeBtn3);
 		  
 	
 }

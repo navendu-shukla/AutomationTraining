@@ -4,14 +4,9 @@
   <test  name="Test1" >
     <classes>
     <class name="atAssignment.contactUs"/>
-	
-    </classes>
-  </test> <!-- Test2 -->
-   <test  name="Test2" >
-    <classes>
-   
 	<class name="atAssignment.scrollingAround"/>
     </classes>
   </test> <!-- Test2 -->
+  
 
 </suite> <!-- Suite -->

@@ -11,7 +11,7 @@ import PomMain.contactUsPom;
 import PomMain.homePage;
 import PomMain.ourProducts;
 
-public class iframe extends chromeDriverInitial{
+public class IframeTest extends chromeDriverInitial{
 	  @BeforeTest
 	  public void setup()
 		{

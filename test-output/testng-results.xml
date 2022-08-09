@@ -1,87 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-03T18:36:09 IST" name="Default suite" finished-at="2022-08-03T18:36:43 IST" duration-ms="34614">
+  <suite started-at="2022-08-09T17:38:54 IST" name="Default suite" finished-at="2022-08-09T17:39:05 IST" duration-ms="10921">
     <groups>
     </groups>
-    <test started-at="2022-08-03T18:36:09 IST" name="Default test" finished-at="2022-08-03T18:36:43 IST" duration-ms="34614">
-      <class name="atAssignment.buttonClicks">
-        <test-method is-config="true" signature="driverInitial()[pri:0, instance:atAssignment.buttonClicks@58cbafc2]" started-at="2022-08-03T18:36:06 IST" name="driverInitial" finished-at="2022-08-03T18:36:09 IST" duration-ms="2529" status="PASS">
+    <test started-at="2022-08-09T17:38:54 IST" name="Default test" finished-at="2022-08-09T17:39:05 IST" duration-ms="10921">
+      <class name="atAssignment.DatePickerTest">
+        <test-method is-config="true" signature="driverInitial()[pri:0, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:51 IST" name="driverInitial" finished-at="2022-08-09T17:38:54 IST" duration-ms="2654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitial -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.buttonClicks@58cbafc2]" started-at="2022-08-03T18:36:09 IST" name="setup" finished-at="2022-08-03T18:36:11 IST" duration-ms="1984" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:54 IST" name="setup" finished-at="2022-08-09T17:38:56 IST" duration-ms="2166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAccordionTitleIsDisplayed()[pri:1, instance:atAssignment.buttonClicks@58cbafc2]" started-at="2022-08-03T18:36:11 IST" name="verifyAccordionTitleIsDisplayed" finished-at="2022-08-03T18:36:12 IST" duration-ms="1310" status="PASS">
+        <test-method signature="verifyDatePickerHeaderIsDisplayed()[pri:1, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:56 IST" name="verifyDatePickerHeaderIsDisplayed" finished-at="2022-08-09T17:38:58 IST" duration-ms="1442" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAccordionTitleIsDisplayed -->
-        <test-method signature="verifyButtonsAreDisplayed()[pri:1, instance:atAssignment.buttonClicks@58cbafc2]" started-at="2022-08-03T18:36:12 IST" name="verifyButtonsAreDisplayed" finished-at="2022-08-03T18:36:12 IST" duration-ms="103" status="PASS">
+        </test-method> <!-- verifyDatePickerHeaderIsDisplayed -->
+        <test-method signature="datePickerAutomation()[pri:2, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:58 IST" name="datePickerAutomation" finished-at="2022-08-09T17:39:05 IST" duration-ms="7200" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyButtonsAreDisplayed -->
-        <test-method signature="buttonClickAutomation()[pri:2, instance:atAssignment.buttonClicks@58cbafc2]" started-at="2022-08-03T18:36:12 IST" name="buttonClickAutomation" finished-at="2022-08-03T18:36:43 IST" duration-ms="31126" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='myModalMoveClick']/div/div/div[3]/button (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:56223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56223/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e367cd490b8b7f9d79240adf82a4671e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='myModalMoveClick']/div/div/div[3]/button (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'SahilPathak-indel-11303.local', ip: 'fe80:0:0:0:56:9cad:c9f0:a383%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/_l/dzsm51x15k7...}, goog:chromeOptions: {debuggerAddress: localhost:56223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56223/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e367cd490b8b7f9d79240adf82a4671e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at atAssignment.buttonClicks.buttonClickAutomation(buttonClicks.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buttonClickAutomation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.buttonClicks@58cbafc2]" started-at="2022-08-03T18:36:43 IST" name="tearDown" finished-at="2022-08-03T18:36:44 IST" duration-ms="131" status="PASS">
+        </test-method> <!-- datePickerAutomation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:39:05 IST" name="tearDown" finished-at="2022-08-09T17:39:05 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- atAssignment.buttonClicks -->
+      </class> <!-- atAssignment.DatePickerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

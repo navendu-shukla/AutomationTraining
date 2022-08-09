@@ -4,11 +4,10 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 import java.util.Set;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 
-public class alertsPopups extends chromeDriverInitial{
+public class AlertsPopupsTest extends chromeDriverInitial{
 	  @BeforeTest
 	  public void setup()
 		{
@@ -30,30 +29,26 @@ public class alertsPopups extends chromeDriverInitial{
 		}
 @Test(priority=2)
 public void alertsPopupAutomation() throws InterruptedException {
+	AlertPopups ap=new AlertPopups(driver);
 	//handling alert of button1
-	driver.findElement(By.cssSelector("span[id='button1']")).click();
-	Alert al=driver.switchTo().alert();
-	al.accept();
+	ap.clickBtn(ap.btn1);
+	ap.alertAccept();
 
 	//handling modal popup
-	driver.findElement(By.cssSelector("span[id='button2']")).click();
-	driver.findElement(By.xpath
-		    ("//div[@id='myModal']/div/div/div[3]/button")).click();
+	ap.clickBtn(ap.btn2);	
+	ap.clickCloseBtn(ap.closeBtnBtn2);
 	
 	//handling ajax loader modal popup
-		driver.findElement(By.cssSelector("span[id='button3']")).click();
-		 driver.findElement(By.cssSelector("span[id='button1']")).click();;
-		  driver.findElement(By.xpath
-				("//div[@id='myModalClick']/div/div/div[3]/button")).click();
+	ap.clickBtn(ap.btn3);
+	ap.clickBtn(ap.btnAjax);
+	ap.clickCloseBtn(ap.closeBtnAjax);
 		  driver.navigate().back();
 		  //handling javascript confirmbox and clicking ok
-		  driver.findElement(By.cssSelector("span[id='button4']")).click();
-			Alert al1=driver.switchTo().alert();
-			al1.accept();
+		  ap.clickBtn(ap.btn4);
+			ap.alertAccept();
 			//handling javascript confirmbox and clicking cancel
-			driver.findElement(By.cssSelector("span[id='button4']")).click();
-			Alert al2=driver.switchTo().alert();
-			al2.dismiss();
+			ap.clickBtn(ap.btn4);
+			ap.alertDismiss();
 		  
 	 
 }

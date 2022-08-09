@@ -8,13 +8,12 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 
-public class ajaxLoader extends chromeDriverInitial{
+public class AjaxLoaderTest extends chromeDriverInitial{
   @Test(priority=2)
   public void ajaxLoaderAutomation() throws InterruptedException {
+	  AjaxLoader aj=new AjaxLoader(driver);
+	  aj.clickBtn();
 	  
-	  driver.findElement(By.cssSelector("span[id='button1']")).click();;
-	  driver.findElement(By.xpath
-			("//div[@id='myModalClick']/div/div/div[3]/button")).click();
 	  
   }
   @BeforeTest

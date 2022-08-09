@@ -7,8 +7,10 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.testng.annotations.*;
 
+import PomMain.contactUsPom;
 
-public class contactUs extends chromeDriverInitial{
+
+public class ContactUsTest extends chromeDriverInitial{
 	@BeforeTest
 	public void setup() {
 		driver.get("http://webdriveruniversity.com/index.html");
@@ -30,44 +32,12 @@ public class contactUs extends chromeDriverInitial{
 	
   @Test(priority=2)
   public void contactUsAutomation() throws InterruptedException {
+	  contactUsPom con=new contactUsPom(driver);
+ 		con.keys();
+ 		con.clickResetButton();
+ 		con.keys();	   		
+ 		con.clickSubmitButton();
 	    
-//sending values to input fields
-		    driver.findElement(By.xpath("//input[@name='first_name']")).
-		    sendKeys("sahil");
-		    
-		    driver.findElement(By.xpath
-		    ("//form[@id='contact_form']/input[2]")).sendKeys("pathak");
-		    
-		    driver.findElement(By.xpath
-		    ("//form[@id='contact_form']/input[3]")).
-		    sendKeys("sahilpathak232@gmail.com");
-		    
-		    driver.findElement(By.cssSelector("textarea[name='message']")).
-		    sendKeys("hello this is my assignment number 1");
-		    //reset button 
-		    driver.findElement(By.cssSelector("input[type='reset']")).
-		    click();
-//sending values to input fields
-		    driver.findElement(By.xpath("//input[@name='first_name']")).
-		    sendKeys("sahil");
-		    
-		    driver.findElement(By.xpath
-		    ("//form[@id='contact_form']/input[2]")).sendKeys("pathak");
-		    
-		    driver.findElement(By.xpath
-		    ("//form[@id='contact_form']/input[3]")).
-		    sendKeys("sahilpathak232@gmail.com");
-		    
-		    driver.findElement(By.cssSelector("textarea[name='message']")).
-		    sendKeys("hello this is my assignment number 1");
-		    
-		    
-//submit button
-		    driver.findElement(By.xpath
-		    ("//input[@class='contact_button' and @value='SUBMIT']")).click();
-		    
-		    
-		    
 
 	    
 	    }

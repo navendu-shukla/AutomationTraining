@@ -1,6 +1,9 @@
 package atAssignment;
 
 import org.testng.annotations.Test;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -8,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 
-public class fileUpload extends chromeDriverInitial{
+public class DatePickerTest extends chromeDriverInitial{
 	  @BeforeTest
 	  public void setup()
 		{
@@ -17,7 +20,7 @@ public class fileUpload extends chromeDriverInitial{
 			    System.out.println("parent window- "+parentHandle);
 			    
 			    driver.findElement(By.cssSelector
-			    		("a[id='file-upload']")).click(); 
+			    		("a[id='datepicker']")).click(); 
 			
 			    
 			    Set<String> handles=driver.getWindowHandles();
@@ -29,21 +32,20 @@ public class fileUpload extends chromeDriverInitial{
 			    }    
 		}
 @Test(priority=2)
-public void fileUploadAutomation() throws InterruptedException {
-	//clicking on choose file button
-	WebElement chooseFile = driver.findElement(By.id("myFile"));
-	chooseFile.sendKeys("/Users/sahil.pathak/Downloads/flower.jpeg");
-	//clicking on submit button
-	driver.findElement(By.cssSelector("input[id='submit-button']")).click();
-	driver.switchTo().alert().accept();
-	
+public void datePickerAutomation() throws InterruptedException {
+	DatePicker date=new DatePicker(driver);
+	date.selectDate();
+    
+}
+    
+
 	
 	
 	  
-}
+
 
 @Test(priority=1)
-public void verifyFileUploadIsDisplayed()
+public void verifyDatePickerHeaderIsDisplayed()
 {
 	Assert.assertTrue(driver.findElement
 			 (By.id("nav-title")).isDisplayed());
