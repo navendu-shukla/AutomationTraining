@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="atAssignment.ScrollingAroundTest">
+        <methods>
+          <include name="driverInitial"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="scrollAutomation"/>
+        </methods>
+      </class> <!-- atAssignment.ScrollingAroundTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
   <test thread-count="2" parallel="tests" name="Test1(failed)">
     <classes>
-      <class name="atAssignment.contactUs">
+      <class name="atAssignment.ContactUsTest">
         <methods>
-          <include name="verifyContactUsIsDisplayed"/>
+          <include name="tearDownClose"/>
+          <include name="setup"/>
           <include name="tearDown"/>
           <include name="driverInitial"/>
-          <include name="contactUsAutomation"/>
-          <include name="verifyThankyouMsgIsDisplayed"/>
+          <include name="verifyContactUsIsDisplayed"/>
           <include name="verifyContactUsFormIsDisplayed"/>
-          <include name="setup"/>
+          <include name="verifyThankyouMsgIsDisplayed"/>
+          <include name="contactUsAutomation"/>
         </methods>
-      </class> <!-- atAssignment.contactUs -->
+      </class> <!-- atAssignment.ContactUsTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

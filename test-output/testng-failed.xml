@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="atAssignment.HiddenElementsTest">
+      <class name="apiAutomationTraining.ApiAutomation">
         <methods>
-          <include name="tearDown"/>
-          <include name="driverInitial"/>
-          <include name="hiddenElementsAutomation"/>
-          <include name="setup"/>
+          <include name="patchUpdate"/>
         </methods>
-      </class> <!-- atAssignment.HiddenElementsTest -->
+      </class> <!-- apiAutomationTraining.ApiAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

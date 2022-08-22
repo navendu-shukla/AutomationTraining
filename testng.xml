@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="2" parallel="classes">
+<suite name="Suite" thread-count="2" >
   <test  name="Test1" >
     <classes>
-    <class name="atAssignment.contactUs"/>
-	<class name="atAssignment.scrollingAround"/>
+    <class name="atAssignment.ContactUsTest"/>
     </classes>
-  </test> <!-- Test2 -->
+  </test> <!-- Test1 -->
+ 
   
 
 </suite> <!-- Suite -->

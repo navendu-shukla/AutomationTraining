@@ -14,6 +14,11 @@
   	</dependency>
   	
   	
+	<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.1.1</version>
+	</dependency>
   	
   	
   	<dependency>
@@ -22,6 +27,12 @@
 	  <version>7.6.0</version>
 	  <scope>compile</scope>
 	</dependency>
+	
+	<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
 
   </dependencies>
   <build>
@@ -47,7 +58,7 @@
   			<version>3.0.0-M7</version>
   			<configuration>
   			<suiteXmlFiles>  
-			<suiteXmlFile>/Users/sahil.pathak/eclipse-workspace/atAssignment/testng.xml</suiteXmlFile>  
+			<suiteXmlFile>/Users/sahil.pathak/Desktop/automation assignments/AutomationTraining/testng.xml</suiteXmlFile>  
 			</suiteXmlFiles>  
   			</configuration>
   			

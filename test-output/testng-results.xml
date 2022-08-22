@@ -1,33 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-09T17:38:54 IST" name="Default suite" finished-at="2022-08-09T17:39:05 IST" duration-ms="10921">
+  <suite started-at="2022-08-22T18:51:11 IST" name="Default suite" finished-at="2022-08-22T18:51:29 IST" duration-ms="18363">
     <groups>
     </groups>
-    <test started-at="2022-08-09T17:38:54 IST" name="Default test" finished-at="2022-08-09T17:39:05 IST" duration-ms="10921">
-      <class name="atAssignment.DatePickerTest">
-        <test-method is-config="true" signature="driverInitial()[pri:0, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:51 IST" name="driverInitial" finished-at="2022-08-09T17:38:54 IST" duration-ms="2654" status="PASS">
+    <test started-at="2022-08-22T18:51:11 IST" name="Default test" finished-at="2022-08-22T18:51:29 IST" duration-ms="18363">
+      <class name="apiAutomationTraining.ApiAutomation">
+        <test-method signature="getListUsers()[pri:1, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:11 IST" name="getListUsers" finished-at="2022-08-22T18:51:17 IST" duration-ms="5401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverInitial -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:54 IST" name="setup" finished-at="2022-08-09T17:38:56 IST" duration-ms="2166" status="PASS">
+        </test-method> <!-- getListUsers -->
+        <test-method signature="getSingleUser()[pri:2, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:17 IST" name="getSingleUser" finished-at="2022-08-22T18:51:17 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyDatePickerHeaderIsDisplayed()[pri:1, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:56 IST" name="verifyDatePickerHeaderIsDisplayed" finished-at="2022-08-09T17:38:58 IST" duration-ms="1442" status="PASS">
+        </test-method> <!-- getSingleUser -->
+        <test-method signature="getUserNotFound()[pri:3, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:17 IST" name="getUserNotFound" finished-at="2022-08-22T18:51:18 IST" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDatePickerHeaderIsDisplayed -->
-        <test-method signature="datePickerAutomation()[pri:2, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:38:58 IST" name="datePickerAutomation" finished-at="2022-08-09T17:39:05 IST" duration-ms="7200" status="PASS">
+        </test-method> <!-- getUserNotFound -->
+        <test-method signature="getListResource()[pri:4, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:18 IST" name="getListResource" finished-at="2022-08-22T18:51:18 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datePickerAutomation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:atAssignment.DatePickerTest@1ca3b418]" started-at="2022-08-09T17:39:05 IST" name="tearDown" finished-at="2022-08-09T17:39:05 IST" duration-ms="174" status="PASS">
+        </test-method> <!-- getListResource -->
+        <test-method signature="getListSingleResource()[pri:5, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:18 IST" name="getListSingleResource" finished-at="2022-08-22T18:51:18 IST" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- atAssignment.DatePickerTest -->
+        </test-method> <!-- getListSingleResource -->
+        <test-method signature="getSingleResourceNotFound()[pri:6, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:18 IST" name="getSingleResourceNotFound" finished-at="2022-08-22T18:51:19 IST" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleResourceNotFound -->
+        <test-method signature="postCreate()[pri:7, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:19 IST" name="postCreate" finished-at="2022-08-22T18:51:20 IST" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCreate -->
+        <test-method signature="putUpdate()[pri:8, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:20 IST" name="putUpdate" finished-at="2022-08-22T18:51:20 IST" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putUpdate -->
+        <test-method signature="patchUpdate()[pri:9, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:20 IST" name="patchUpdate" finished-at="2022-08-22T18:51:21 IST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchUpdate -->
+        <test-method signature="deleteUser()[pri:10, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:21 IST" name="deleteUser" finished-at="2022-08-22T18:51:22 IST" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method signature="postRegisterSuccessful()[pri:11, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:22 IST" name="postRegisterSuccessful" finished-at="2022-08-22T18:51:23 IST" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRegisterSuccessful -->
+        <test-method signature="postRegisterUnsuccessful()[pri:12, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:23 IST" name="postRegisterUnsuccessful" finished-at="2022-08-22T18:51:23 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRegisterUnsuccessful -->
+        <test-method signature="postLoginSuccessful()[pri:13, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:23 IST" name="postLoginSuccessful" finished-at="2022-08-22T18:51:24 IST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postLoginSuccessful -->
+        <test-method signature="postLoginUnsuccessful()[pri:14, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:24 IST" name="postLoginUnsuccessful" finished-at="2022-08-22T18:51:25 IST" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postLoginUnsuccessful -->
+        <test-method signature="getDelayedResponse()[pri:15, instance:apiAutomationTraining.ApiAutomation@3e27aa33]" started-at="2022-08-22T18:51:25 IST" name="getDelayedResponse" finished-at="2022-08-22T18:51:29 IST" duration-ms="4678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDelayedResponse -->
+      </class> <!-- apiAutomationTraining.ApiAutomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
